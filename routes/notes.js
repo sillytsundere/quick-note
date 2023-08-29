@@ -13,7 +13,8 @@ notes.get("/", (req, res) => {
     res.status(200).json(JSON.parse(data))
   )
   .catch((err) => {
-      console.error
+      console.error(err);
+      res.status(500).send('Server error');
   })
 });
 
@@ -33,14 +34,15 @@ notes.post("/", (req, res) => {
 
     readAndAppend(newNote, '../db/db.json');
 
+    //this response will send a success status and show the new note object
     const response = {
       status: 'success',
       body: newNote,
     };
 
-    res.json(response);
+    res.status(200).json(response);
   } else {
-    res.json('Error in posting note');
+    res.status(400).json('Error in posting note');
   }
 
 });
@@ -51,4 +53,5 @@ notes.delete("/:id", (req, res) => {
   res.json(`DELETE route`);
 });
 
+//export statement for note module
 module.exports = notes;
