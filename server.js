@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const uuid = require('uuid');
-
+const api = require('./routes/index.js'); //imports api from index.js
 
 //invokes an instance of express, app object is an instance of express and now express can be used
 const app = express();
 
+//port handler
 const PORT = process.env.PORT || 3001;
 
 //write middleware for project
@@ -14,9 +14,10 @@ app.use(express.json());
 //this middleware method parses the request body (object) for a post request to JSON
 app.use(express.urlencoded({ extended: true }));
 //this middleware method aids express in seeing the incoming request body (object) as JSON(specializing in complex objects and arrays?), and it parses an html request additionally
+app.use('/api', api);
+//sends requests that begin with /api to the index.js in routes folder
 app.use(express.static('public'));
-
-//wil need routes/paths for GET, POST, DELETE, 
+//this middleware serves static assets from public folder
 
 //GET route for homepage/index.html
 app.get('/', (req, res) => 
