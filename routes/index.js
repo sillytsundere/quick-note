@@ -2,7 +2,7 @@
 const express = require("express");
 
 //import module route for notes
-const notesRouter = require("./notes");
+const notesRouter = require("./notes.js");
 
 //create instance of express so middleware and routing can be applied
 const app = express();

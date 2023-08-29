@@ -1,7 +1,8 @@
 const express = require("express");
 const path = require("path");
-const fs = require("fs");
-const api = require("./routes/index.js"); //imports api from index.js
+
+//imports api from index.js
+const api = require('/Users/paigehamilton/Documents/bootcamp/challenges/quick-note/routes/index.js');
 
 //invokes an instance of express, app object is an instance of express and now express can be used
 const app = express();
