@@ -1,9 +1,8 @@
 const notes = require("express").Router();
-
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
 
-//write GET path for retreiving notes
+//GET path for retreiving notes
 notes.get("/notes", (req, res) => {
     console.info(`${req.method} request received to get all current notes`);
     let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
@@ -11,7 +10,7 @@ notes.get("/notes", (req, res) => {
 
 });
 
-//write POST path for submitting new notes
+//POST path for submitting new notes
 notes.post("/notes", (req, res) => {
   console.info(`${req.method} request received to add a note`);
 
@@ -39,7 +38,7 @@ notes.post("/notes", (req, res) => {
   }
 });
 
-//write DELETE path for deleting notes
+//DELETE path for deleting notes
 notes.delete("/notes/:id", (req, res) => {
   console.info(`${req.method} request received to delete a note`);
   let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
