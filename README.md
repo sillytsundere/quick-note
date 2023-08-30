@@ -16,13 +16,13 @@ This project required a strong understanding of JavaScript as well as utilizing 
 
 ## Installation
 
-To use this applcation, clone the project directories and files from [the repository](https://github.com/sillytsundere/quick-note) and open the quick-note repo in preferred code editor. Install the dependent modules (express.js, uuid) using npm install with Node.js. Finally start the server with Node.js and visit the localhost:3001 to view the application and experiment with it's functionality.
+To use this applcation locally, clone the project directories and files from [the repository](https://github.com/sillytsundere/quick-note) and open the quick-note repo in preferred code editor. Install the dependent modules (express.js, uuid) using npm install with Node.js. Finally start the server with Node.js and visit the localhost:3001 to view the application and experiment with it's functionality.
 
 ## Usage
 
 ![Home page for note-taker application](./dev-assets/images/note-begin.png)
 
-Once at the notes HTML page (localhost:3001/notes) previously saved notes will be displayed on the left hand side and clicking one will display the note title and the note text in the note space on the right hand side. 
+From the [homepage](https://quick-note-page-639acc4da853.herokuapp.com/) click on the "Get Started" button to navigate to the notes page. Once on the notes page, previously saved notes will be displayed on the left hand side and clicking one will display the note title and the note text in the note space on the right hand side.
 
 ![Note page display with top note clicked](./dev-assets/images/note-display.png)
 
@@ -35,6 +35,8 @@ Users can click the plus sign on the top right of the page to begin a new note a
 To delete a note the user can decide which note they would like to remove and click the trash icon next to that note in the left hand column and the note will clear from the log of saved notes.
 
 ![Grocery List note is gone as it has been deleted from left hand note column](./dev-assets/images/note-deleted.png)
+
+The deployed site can be reached at this link: https://quick-note-page-639acc4da853.herokuapp.com/
 
 ## Credits
 
