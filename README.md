@@ -1,67 +1,61 @@
-# <Your-Project-Title>
+# Quick Note Taker
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This application is a simple and quick note taker. The application displays notes saved in a database deployed on Heroku. The user has the ability to view previously created notes, make new notes and delete old notes!
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This project required a strong understanding of JavaScript as well as utilizing that JavaScript with Express.js. Constructing this application taught me a lot about Express.js and how servers work. Modularizing the routes, the server.js and the front end on this small application is a good introduction to how all the necessary modules connect and work together.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [How to Contribute](#how-to-contribute)
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To use this applcation, clone the project directories and files from [the repository](https://github.com/sillytsundere/quick-note) and open the quick-note repo in preferred code editor. Install the dependent modules (express.js, uuid) using npm install with Node.js. Finally start the server with Node.js and visit the localhost:3001 to view the application and experiment with it's functionality.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+![Home page for note-taker application](./dev-assets/images/note-begin.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Once at the notes HTML page (localhost:3001/notes) previously saved notes will be displayed on the left hand side and clicking one will display the note title and the note text in the note space on the right hand side. 
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![Note page display with top note clicked](./dev-assets/images/note-display.png)
+
+Users can click the plus sign on the top right of the page to begin a new note and once finished can click the save icon next to the plus icon at the top right to save the new note to the database. Once saved the new note will appear with the previous notes on the left hand side.
+
+![New note workout-plan written in right hand column](./dev-assets/images/write-new-note.png)
+
+![New note workout-plan saved to left hand column](dev-assets/images/new-note-saved.png)
+
+To delete a note the user can decide which note they would like to remove and click the trash icon next to that note in the left hand column and the note will clear from the log of saved notes.
+
+![Grocery List note is gone as it has been deleted from left hand note column](./dev-assets/images/note-deleted.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Source code was obtained from [The Coding Bootcamp](https://github.com/coding-boot-camp/miniature-eureka)
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Badges sourced from: [Awesome Badges](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+![Static Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+![Static Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-## Features
+![Static Badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 
-If your project has a lot of features, list them here.
+![Static Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+If you have any questions or would like to contact me please reach out to me at [My GitHub Page](https://github.com/sillytsundere).
