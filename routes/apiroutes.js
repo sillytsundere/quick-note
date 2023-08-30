@@ -4,10 +4,9 @@ const { v4: uuidv4 } = require("uuid");
 
 //GET path for retreiving notes
 notes.get("/notes", (req, res) => {
-    console.info(`${req.method} request received to get all current notes`);
-    let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
-    res.json(notes);
-
+  console.info(`${req.method} request received to get all current notes`);
+  let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+  res.json(notes);
 });
 
 //POST path for submitting new notes
@@ -26,9 +25,11 @@ notes.post("/notes", (req, res) => {
       id: uuidv4(),
     };
 
+    //parsing notes from db file
     let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    //adding new note to the parsed notes
     notes.push(newNote);
-
+    //writing new note list with newly added note back to db file
     fs.writeFileSync("./db/db.json", JSON.stringify(notes));
 
     res.json(newNote);
@@ -44,10 +45,11 @@ notes.delete("/notes/:id", (req, res) => {
   let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
   let deleteNote = req.params.id;
 
-  let updatedNotes = notes.filter((n) => n.id != deleteNote)
+  //filter() searches through each item of array and this function finds each item whose id does NOT match the deleteNote id and puts them in updated notes, so the deleted note is not saved(deleted)
+  let updatedNotes = notes.filter((n) => n.id != deleteNote);
 
   // rewrite db.json file with updated Notes array
-    fs.writeFileSync('./db/db.json', JSON.stringify(updatedNotes));
+  fs.writeFileSync("./db/db.json", JSON.stringify(updatedNotes));
 
   res.json(updatedNotes);
 });

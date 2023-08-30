@@ -1,10 +1,9 @@
 const express = require("express");
-const path = require("path");
 const fs = require("fs");
 
 //sends requests that begin with /api to the respective file in routes folder
-const apiRoutes = require('./routes/apiroutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require("./routes/apiroutes");
+const htmlRoutes = require("./routes/htmlRoutes");
 
 //invokes an instance of express, app object is an instance of express and now express can be used
 const app = express();

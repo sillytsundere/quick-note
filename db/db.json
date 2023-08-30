@@ -1,1 +1,17 @@
-[{"title":"To-Do","text":"grocery shop\nhomework \nclean room","id":"2ecfe3f9-d5a3-4b79-ad30-f503bb8a27be"},{"title":"Weekend Plans","text":"Dinner with friends\nthrift shopping","id":"83486cab-c840-468d-a148-3fc75d638e04"},{"title":"Workout Plan","text":"Run\nUpper Body\nRun\nLower Body\nRest","id":"264135df-3090-456d-9bc7-178f588169b4"}]
+[
+  {
+    "title": "To-Do",
+    "text": "grocery shop\nhomework \nclean room",
+    "id": "2ecfe3f9-d5a3-4b79-ad30-f503bb8a27be"
+  },
+  {
+    "title": "Weekend Plans",
+    "text": "Dinner with friends\nthrift shopping",
+    "id": "83486cab-c840-468d-a148-3fc75d638e04"
+  },
+  {
+    "title": "Workout Plan",
+    "text": "Run\nUpper Body\nRun\nLower Body\nRest",
+    "id": "264135df-3090-456d-9bc7-178f588169b4"
+  }
+]

@@ -11,4 +11,5 @@ router.get("/notes", (req, res) =>
   res.sendFile(path.join(__dirname, "../public/notes.html"))
 );
 
+//exports this file and its paths to use in server.js
 module.exports = router;
