@@ -36,7 +36,7 @@ To delete a note the user can decide which note they would like to remove and cl
 
 ![Grocery List note is gone as it has been deleted from left hand note column](./dev-assets/images/note-deleted.png)
 
-The deployed site can be reached at this link: https://quick-note-page-639acc4da853.herokuapp.com/
+The deployed site can be reached at this link: !!!This application is currently not deployed!!!
 
 ## Credits
 
